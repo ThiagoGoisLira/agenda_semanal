@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>G Elétrica - Gestão de Tarefas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container-principal">
+        <header>
+            <h1>Agenda G Elétrica</h1>
+            
+            <div class="painel-entrada">
+                <div class="campos-texto">
+                    <input type="text" id="entradaTarefa" placeholder="Título da tarefa...">
+                    <textarea id="entradaObs" placeholder="Observações adicionais..." rows="2"></textarea>
+                </div>
+                
+                <div class="campos-auxiliares">
+                    <div class="grupo-data">
+                        <label for="entradaData">Prazo:</label>
+                        <input type="date" id="entradaData">
+                    </div>
+                    <button id="btnAdicionar" class="btn-primario">
+                        <span class="icone-mais">+</span> Adicionar
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <main class="grade-agenda" id="gradeAgenda">
+            </main>
+    </div>
+
+    <div id="modalEdicao" class="sobreposicao-modal">
+        <div class="conteudo-modal">
+            <h3>Editar Tarefa</h3>
+            <div class="campos-edicao">
+                <label>Título:</label>
+                <input type="text" id="editarTitulo">
+                
+                <label>Observações:</label>
+                <textarea id="editarObs" rows="4"></textarea>
+            </div>
+            <div class="botoes-modal">
+                <button onclick="fecharModal()" class="btn-secundario">Cancelar</button>
+                <button id="btnSalvarEdicao" class="btn-primario">Salvar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
