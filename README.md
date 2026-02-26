@@ -27,4 +27,4 @@ Como o sistema utiliza tecnologias puramente "client-side", não é necessário 
 
 1. Faça o download ou clone este repositório:
    ```bash
-   git clone [https://github.com/ThiagoGoisLira/nome-do-repositorio.git](https://github.com/ThiagoGoisLira/nome-do-repositorio.git)
+   git clone [https://github.com/ThiagoGoisLira/agenda_semanal.git](https://github.com/ThiagoGoisLira/agenda_semanal.git)
